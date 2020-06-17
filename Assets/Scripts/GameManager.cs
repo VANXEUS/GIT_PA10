@@ -9,9 +9,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text Txt_Score = null;
     [SerializeField] private Text Txt_Message = null;
     private int Score = 0;
+    private int now = 2;
 
     void Start()
     {
+        Txt_Score.text = Score.ToString();
         thisManager = this;
         Time.timeScale = 0;
     }
@@ -22,10 +24,13 @@ public class GameManager : MonoBehaviour
             StartGame();
     }
 
-    public void UpdateScore(int value)
+    public void UpdateScore()
     {
-        Score += value;
-        Txt_Score.text = "SCORE : " + Score;
+        if (now > 0)
+        {
+            Score = Score + 1;
+            Txt_Score.text = Score.ToString();
+        }
     }
 
     private void StartGame()

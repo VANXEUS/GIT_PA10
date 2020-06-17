@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8253605743114604250}
   m_Layer: 0
   m_Name: Obstacle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,3 +105,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 3
+  Player: {fileID: 9161755908021551937, guid: 4d4dce69b2c18554182571c1cc126d7b, type: 3}
